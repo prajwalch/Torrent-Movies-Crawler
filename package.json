@@ -1,0 +1,33 @@
+{
+  "name": "cxcrawler",
+  "version": "0.0.1",
+  "description": "Movies crawling tool",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "Torrent",
+    "Movies",
+    "Crawl",
+    "Scrapy",
+    "Free",
+    "movies"
+  ],
+  "author": "Prajwal Chapagain",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.23.0",
+    "morgan": "^1.10.0",
+    "puppeteer": "^3.3.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

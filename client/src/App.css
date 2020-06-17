@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+}
+
+.Container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+.dim-text {
+  color: rgba(255, 255, 255, 60%);
+}
+
+.App-header {
+  padding: 0 0 20px
+}
+
+.header {
+  margin: 0 0 20px;
+}
+
+.movies-container {
+  width: 77%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 6px;
+  /* background-color: hsl(0, 0%, 13%); */
+  /* overflow: scroll; */
+  /* box-shadow: 0 1px 2px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0); */
+}
+
+/* Browse movie header => h3 */
+.browse-movies-header {
+  padding: 0 0 10px;
+  border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.movie-wrapper {
+  width: 170px;
+  /* background-color: rgb(80, 80, 80); */
+  text-align: center;
+  margin: 10px 10px 20px;
+}
+
+.movie-thumbnail {
+  margin: 2px 0;
+  border: 2px solid rgb(80, 80, 80);
+  transition: 0.1s ease-in-out;
+}
+
+.movie-thumbnail:hover {
+  filter: opacity(65%)
+}
+
+.movie-details {
+  text-align: left;
+  padding: 0 0 0 15px;
+}
+
+a h3 {
+  font-weight: 400;
+}
+
+button.next-page {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgb(64, 136, 204);
+  border-radius: 6px;
+  padding: 9px 17px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  transition: 0.1s ease-in-out;
+}
+
+button.next-page:hover {
+  background-color: rgba(64, 136, 204, 0.4);
+}
+
+@media only screen and (max-width: 600px) {
+  .movies-container {
+    width: 100%;
+    border: none;
+    background-color: hsl(0, 0%, 13%);
+    box-shadow: 0 1px 2px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
+  }
+
+  .movies {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .movie-wrapper {
+    width: 150px;
+    margin: 10px 8px 20px;
+
+  }
+
+  .movie-thumbnail {
+    height: 177px;
+    width: 123px
+  }
+
+  .movie-details {
+    text-align: left;
+    padding: 0 0 0 15px;
+  }
+}
