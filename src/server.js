@@ -40,13 +40,6 @@ app.get('/movies/:movieName', async (request, response) => {
   }
 });
 
-// async function extractMovieData(functionName, urlData) {
-//   process.stdout.write('Loading.....' + '\n');
-//   const hasData = await (urlData);
-//   if (!hasData) return console.log('Cannot get data from server due to connection error.');
-//   return hasData
-// }
-
 const port = process.env.PORT || 2058;
 app.listen(port, () => {
   console.log(`Server started on port: ${port}`)
